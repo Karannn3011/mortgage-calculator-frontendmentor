@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Mortgage repayment calculator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+  <section class="form">
+    <div class="title">
+    <h1>Mortgage Calculator</h1>
+    <a class="clearbtn">Clear All</a>
+    </div>
+    <form>
+      <div class="form-group">
+        <div class="e1">
+        <label for="mortgage-amount">Mortgage Amount</label>
+        <div class="input-group">
+          <span class="currency spanlabel">£</span>
+          <input type="number" id="mortgage-amount" min="0" step="0.01" placeholder="0.00" required>
+        </div>
+        <p class="error-message amounterror">This field is required.</p>
+        </div>
+        <div class="e2">
+        <label for="mortgage-term">Mortgage Term</label>
+        <div class="input-group">
+          <input type="number" id="mortgage-term" min="0" step="1" placeholder="0" required>
+          <span class="years spanlabel">Years</span>
+        </div>
+        <p class="error-message termerror">This field is required.</p>
+        </div>
+        <div class="e3">
+        <label for="interest-rate">Interest Rate</label>
+        <div class="input-group">
+          <input type="number" id="interest-rate" min="0" step="0.01" placeholder="0.00" required>
+          <span class="percentage spanlabel">%</span>
+        </div>
+        <p class="error-message percentageerror">This field is required.</p>
+        </div>
+        <div class="e4">
+        <label for="mortgage-type" name="mortgage-type">Mortgage Type</label>
+        <div class="mortgage-input-group input-group">
+          <label for="repayment" class="mortgage-option">
+            <input type="radio" name="mortgage-type" id="repayment">
+            Repayment
+          </label>
+
+          <label for="interest-only" class="mortgage-option">
+            <input type="radio" name="mortgage-type" id="interest-only">
+            Interest Only
+          </label>
+        </div>
+        <p class="error-message typeerror">This field is required.</p>
+        </div>
+        <button class="submitbtn" type="submit"><img src="./assets/images/icon-calculator.svg" alt="Calculator">
+          <p>Calculate Repayments</p>
+        </button>
+
+      </div>
+    </form>
+  </section>
+  <section class="results">
+    <div class="result-empty">
+      <img src="./assets/images/illustration-empty.svg" alt="Empty results">
+      <h1>Results shown here</h1>
+      <p>Complete the form and click “calculate repayments” to see what your monthly repayments would be.</p>
+    </div>
+    <div class="result-complete">
+      <h1>Your results</h1>
+      <p>Your results are shown below based on the information you provided. To adjust the results, edit the form and
+        click “calculate repayments” again.</p>
+      <div class="result-box">
+        <p>Your monthly repayments</p>
+        <h1 class="monthly-repayment">$1,797.74</h1>
+        <hr />
+        <p>Total you'll repay over the term</p>
+        <h1 class="total-repayment">$215,708.80</h1>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mortgage Calculator
+  Clear All
+
+  Mortgage Amount
+
+  Mortgage Term
+
+  Interest Rate
+
+  Mortgage Type
+  Repayment
+  Interest Only
+
+  Calculate Repayments -->
+
+  <!-- Empty results start -->
+
+  <!-- Results shown here
+
+  Complete the form and click “calculate repayments” to see what 
+  your monthly repayments would be. -->
+
+  <!-- Empty results end -->
+
+  <!-- Completed results start -->
+
+  <!-- Your results
+
+  Your results are shown below based on the information you provided. 
+  To adjust the results, edit the form and click “calculate repayments” again.
+
+  Your monthly repayments
+
+  Total you'll repay over the term
+
+  Completed results end -->
+</div>
+  <script src="script.js"></script>
+</body>
+
+</html>
