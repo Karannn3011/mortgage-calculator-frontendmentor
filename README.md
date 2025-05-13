@@ -39,7 +39,7 @@ Mobile:
 
 ### Links
 
-- Live Site URL: [Here](https://karannn3011.github.io/mortgage-calculate-frontendmentor)
+- Live Site URL: [Here](https://karannn3011.github.io/mortgage-calculator-frontendmentor)
 
 ## My process
 
